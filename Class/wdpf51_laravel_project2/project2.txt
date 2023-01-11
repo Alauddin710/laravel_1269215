@@ -1,9 +1,15 @@
 *** create project***
 composer create-project laravel/laravel:^8.0 wdpf51_laravel_project2 
-php artisan make:model Product -mcr //mcr= model, controller,migration turi hobe
-php artisan make:seeder ProductSeeder //
-php artisan db:seed // ata dara database data dukbe
+php artisan make:model Product -mcr
+php artisan make:seeder ProductSeeder
+php artisan db:seed
 
 php artisan make:factory ProductFactory --model=Product
 
-php artisan migrate:fresh --seed // ata dara database turi hobe abong muse jabe
+php artisan migrate:fresh --seed
+
+******
+{{$product->product_name}}
+
+php artisan make:model Category -mcr
+php artisan migrate
