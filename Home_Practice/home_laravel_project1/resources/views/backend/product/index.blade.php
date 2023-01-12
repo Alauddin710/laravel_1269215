@@ -54,11 +54,11 @@
                                     <label class="custom-control-label" for="pid"></label>
                                 </div>
                             </div>
-                            <div class="nk-tb-col tb-col-sm"><span>Name</span></div>
-                            <div class="nk-tb-col"><span>SKU</span></div>
-                            <div class="nk-tb-col"><span>Price</span></div>
-                            <div class="nk-tb-col"><span>Stock</span></div>
-                            <div class="nk-tb-col tb-col-md"><span>Category</span></div>
+                            <div class="nk-tb-col tb-col-sm"><span>Product_Name</span></div>
+                            <div class="nk-tb-col"><span>Product_Details</span></div>
+                            <div class="nk-tb-col"><span>Product_Price</span></div>
+                            <div class="nk-tb-col"><span>Product_Category</span></div>
+                            <div class="nk-tb-col tb-col-md"><span>Stock</span></div>
                             <div class="nk-tb-col tb-col-md"><em class="tb-asterisk icon ni ni-star-round"></em></div>
                             <div class="nk-tb-col nk-tb-col-tools">
                                 <ul class="nk-tb-actions gx-1 my-n1">
