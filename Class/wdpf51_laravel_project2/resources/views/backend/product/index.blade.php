@@ -135,7 +135,8 @@
                 <div class="card-inner">
                     <div class="nk-block-between-md g-3">
                         <div class="g">
-                            <ul class="pagination justify-content-center justify-content-md-start">
+                            {{$products->links()}}
+                            {{-- <ul class="pagination justify-content-center justify-content-md-start">
                                 <li class="page-item"><a class="page-link" href="#"><em class="icon ni ni-chevrons-left"></em></a></li>
                                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -143,9 +144,10 @@
                                 <li class="page-item"><a class="page-link" href="#">6</a></li>
                                 <li class="page-item"><a class="page-link" href="#">7</a></li>
                                 <li class="page-item"><a class="page-link" href="#"><em class="icon ni ni-chevrons-right"></em></a></li>
-                            </ul><!-- .pagination -->
+                            </ul><!-- .pagination --> --}}
                         </div>
                         <div class="g">
+                            
                             <div class="pagination-goto d-flex justify-content-center justify-content-md-start gx-3">
                                 <div>Page</div>
                                 <div>
@@ -192,10 +194,10 @@
             <div class="row g-3">
             <form action="{{url('/products')}}" method="POST">
                 <div class="col-12">
-                    <form action="{{url('/products')}}" method="POST">
+                    <form id="productForm" action="{{url('/products')}}" method="POST">
                         @csrf
                     <div class="form-group">
-                        <label class="form-label" id="product_name" for="product-title">Product Name</label>
+                        <label class="form-label" id="product_name" for="product_name">Product Name</label>
                         <div class="form-control-wrap">
                             <input type="text" name="product_name" class="form-control" id="product_name">
                         </div>
@@ -255,7 +257,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary"><em class="icon ni ni-plus"></em><span>Add New</span></button>
+                    <button type="button" id="addnew" class="btn btn-primary"><em class="icon ni ni-plus"></em><span>Add New</span></button>
                 </div>
             </form>
             </div>
