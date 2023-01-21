@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('backend.product.index');
+        $products = Product::all();
+        $cats = Category::orderBy('category_name', 'ASC')->get();
+        return view('backend.product.index', compact('products', 'cats'));
     }
 
     /**
@@ -24,7 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        echo "hello";
     }
 
     /**
@@ -35,7 +38,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product();
+        // bam paser ta database name and dan passer ta from name
+        $product->product_name = $request->pr_name;
+        $product->save();
+        return redirect('/products');
     }
 
     /**
