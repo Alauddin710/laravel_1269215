@@ -1,6 +1,0 @@
-**** Create Project*
-php artisan --version
-1. composer create-project laravel/laravel:^9 ecommerce_project
-2. php artisan serve
-3. php artisan migrate
-4. composer require laravel/breeze --dev

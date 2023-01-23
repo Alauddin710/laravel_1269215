@@ -1,0 +1,7 @@
+***Create Auth**
+1. composer create-project laravel/laravel ecommerce_project
+2.composer require laravel/breeze --dev
+3.php artisan breeze:install
+-blade ...............yes
+-phpunit.....................yes
+4.php artisan migrate
