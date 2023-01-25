@@ -20,8 +20,10 @@ class ProductFactory extends Factory
             'product_name' => fake()->name(),
             'product_details' => fake()->paragraph(),
             'product_price' => fake()->numerify(),
+            'product_category' => fake()->randomDigitNot(0),
+            'product_stock' => fake()->randomNumber($nbDigits = 3),
             'product_image' => fake()->imageUrl(640, 480),
-            'product_category' => fake()->randomDigit(),
+
         ];
     }
 }

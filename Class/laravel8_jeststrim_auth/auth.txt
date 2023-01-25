@@ -1,0 +1,20 @@
+1. composer create-project laravel/laravel laravel8_jetstream_auth 
+2. composer require laravel/jetstream
+3. php artisan jetstream:install livewire
+4. npm install
+5. npm run dev 
+6. php artisan migrate 
+
+*** css problem solve code***
+just paste two line inside ( app.blade.php, guest.blade.php ) instead of @vite like this :
+
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+*****
+    config->jetstream->Features::profilePhotos(), ata enabale kore dite hobe pic anar jonno
+******
+    -php artisan make:controller frontend/HomeController
+    -php artisan make:controller backend/LoginController
+    

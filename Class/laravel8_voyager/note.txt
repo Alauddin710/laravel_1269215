@@ -1,0 +1,4 @@
+composer create-project laravel/laravel laravel8_voyager
+cd laravel8_voyager
+composer require tcg/voyager
+php artisan voyager:install // php artisan voyager:install --with-dummy

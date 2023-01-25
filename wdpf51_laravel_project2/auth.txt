@@ -1,0 +1,13 @@
+
+middleware
+php artisan make:middleware CheckAge
+then karnel.php jete hobe 
+ then php artisan make:controller showAge
+ *** website**
+https://www.codesolutionstuff.com/laravel-middleware-tutorial-with-example/
+
+***Auth Create***
+middleware create
+php artisan make:middleware AuthLogin
+Create Controller***
+php artisan make:controller LoginController

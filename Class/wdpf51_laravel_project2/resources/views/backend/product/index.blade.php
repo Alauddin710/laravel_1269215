@@ -117,7 +117,8 @@
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <ul class="link-list-opt no-bdr">
                                                     <li><a href="#"><em class="icon ni ni-edit"></em><span>Edit Product</span></a></li>
-                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Product</span></a></li>
+                                                    <li><a href="{{route('products.show',$product->id)}}"><em class="icon ni ni-eye"></em><span>View Product</span></a></li>
+                                                   
                                                     <li><a href="#"><em class="icon ni ni-activity-round"></em><span>Product Orders</span></a></li>
                                                     <li><a href="#"><em class="icon ni ni-trash"></em><span>Remove Product</span></a></li>
                                                 </ul>
@@ -194,7 +195,7 @@
             <div class="row g-3">
             <form action="{{url('/products')}}" method="POST">
                 <div class="col-12">
-                    <form id="productForm" action="{{url('/products')}}" method="POST">
+                    <!-- <form id="productForm" action="{{url('/products')}}" method="POST"> -->
                         @csrf
                     <div class="form-group">
                         <label class="form-label" id="product_name" for="product_name">Product Name</label>
