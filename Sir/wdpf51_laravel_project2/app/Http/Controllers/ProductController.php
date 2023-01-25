@@ -48,6 +48,7 @@ class ProductController extends Controller
             'product_category' => 'required',
             'product_stock' => 'required',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'product_image' => 'image|mimes:png,jpg|max:2048'
         ]);
         $imageName = time() . '.' .
@@ -57,6 +58,10 @@ class ProductController extends Controller
             'product_image' => 'mimes:png,jpg,pdf|max:2048',
         ]);
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+            'product_image' => 'mimes:png,jpg,pdf|max:2048',
+        ]);
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
         $product = new Product;
         $product->product_name = $request->product_name;
         $product->product_details = $request->product_details;
@@ -64,9 +69,12 @@ class ProductController extends Controller
         $product->product_category = $request->product_category;
         $product->product_stock = $request->product_stock;
 <<<<<<< HEAD
+<<<<<<< HEAD
         // $product->product_image = $request->product_image;
         $product->product_image = $imageName;
 =======
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
         if ($request->product_image) {
             $imageName = time() . '.' . $request->product_image->extension();
             $request->product_image->move(public_path('product_photos'), $imageName);
@@ -76,7 +84,10 @@ class ProductController extends Controller
         }
         $product->save();
         return redirect('products')->with('msg', "Product Added");
+<<<<<<< HEAD
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     }
 
     /**
@@ -88,11 +99,16 @@ class ProductController extends Controller
     public function show(Product $product)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         //
 =======
 
         return view("backend.product.single", compact('product'));
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+
+        return view("backend.product.single", compact('product'));
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     }
 
     /**
@@ -104,6 +120,7 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // echo "Hello";
         // echo $product->id;
         $cats = Category::orderBy('cat_name', 'ASC')->get();
@@ -111,6 +128,9 @@ class ProductController extends Controller
 =======
         //
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+        //
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     }
 
     /**
@@ -122,6 +142,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         echo "Update";
 
@@ -150,6 +171,9 @@ class ProductController extends Controller
 =======
         //
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+        //
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     }
 
     /**
@@ -161,11 +185,15 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         echo $product->id;
         $product->delete();
         return redirect('products')->with('msg', 'Product deleted');
 =======
         //
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+        //
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     }
 }

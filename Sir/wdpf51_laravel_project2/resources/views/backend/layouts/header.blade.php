@@ -9,6 +9,7 @@
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <!-- Fav Icon  -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link rel="shortcut icon" href="/assets/images/favicon.png">
     <!-- Page Title  -->
     <title>Default Dashboard | DashLite Admin Template</title>
@@ -16,13 +17,18 @@
     <link rel="stylesheet" href="/assets/assets/css/dashlite.css?ver=3.1.1">
     <link id="skin-default" rel="stylesheet" href="/assets/assets/css/theme.css?ver=3.1.1">
 =======
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <!-- Page Title  -->
     <title>Default Dashboard | DashLite Admin Template</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="assets/assets/css/dashlite.css?ver=3.1.1">
     <link id="skin-default" rel="stylesheet" href="assets/assets/css/theme.css?ver=3.1.1">
+<<<<<<< HEAD
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
     <style>
         svg.w-5,
         svg.h-5 {

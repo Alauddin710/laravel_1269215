@@ -6,6 +6,7 @@
         <div class="nk-block-between">
             <div class="nk-block-head-content">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <h3 class="nk-block-title page-title">New Product</h3>
             </div><!-- .nk-block-head-content -->
 
@@ -100,6 +101,8 @@
 
 </div>
 =======
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
                 <h3 class="nk-block-title page-title">Dashboard</h3>
             </div><!-- .nk-block-head-content -->
             <div class="nk-block-head-content">
@@ -573,5 +576,8 @@
     </div><!-- .nk-block -->
 </div>
 
+<<<<<<< HEAD
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
 @endsection

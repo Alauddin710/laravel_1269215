@@ -2,6 +2,7 @@
 
 @section('content')
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="nk-content-body">
     @if($msg = Session::get('msg'))
     <div class="alert alert-success">
@@ -274,6 +275,8 @@
 
 @endsection
 =======
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
   <div class="nk-content-body">
     @if ($msg = Session::get('msg'))
       <div class="alert alert-success">
@@ -555,4 +558,7 @@
   </div>
 
 @endsection
+<<<<<<< HEAD
 >>>>>>> 5fcc0c847dd2a4b85939cd433f5d54480e14c383
+=======
+>>>>>>> 6ad1373cf4a43c53c7fd261570bcbb7cae2a1bc9
