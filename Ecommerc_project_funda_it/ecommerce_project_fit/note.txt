@@ -1,0 +1,6 @@
+*** Create project **
+-composer create-project laravel/laravel ecommerce_project_fit
+-composer require laravel/ui
+-php artisan ui bootstrap --auth
+-npm install && npm run dev
+-php artisan migrate

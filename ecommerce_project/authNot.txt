@@ -5,3 +5,8 @@
 -blade ...............yes
 -phpunit.....................yes
 4.php artisan migrate
+
+****main Work ****
+1. -resources->views->admin->header,footer,sidebar,layout.blade.php->dashboard.blade.php and folder front
+2. controller->admin,front folder create,
+3. public folder->admin and front er jonno jabotio css,js,image,
