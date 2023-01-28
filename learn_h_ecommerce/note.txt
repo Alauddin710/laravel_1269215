@@ -1,0 +1,15 @@
+1. composer create-project laravel/laravel learn_h_ecommerce
+2. composer require yajra/laravel-datatables-oracle:"^10.0"
+3. php artisan vendor:publish --tag=datatables
+4. composer require intervention/image
+5. php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+****Shoping Cart System**
+6. composer require bumbummen99/shoppingcart
+7. php artisan vendor:publish --provider="Gloudemans\Shoppingcart\ShoppingcartServiceProvider" --tag="config"
+
+**** laravel ui auth ****
+-composer require laravel/ui
+-php artisan ui bootstrap --auth
+-npm install
+-npm run build
+-npm run dev

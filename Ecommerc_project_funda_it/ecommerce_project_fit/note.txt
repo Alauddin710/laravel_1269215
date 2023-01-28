@@ -2,5 +2,8 @@
 -composer create-project laravel/laravel ecommerce_project_fit
 -composer require laravel/ui
 -php artisan ui bootstrap --auth
--npm install && npm run dev
+-npm install
+- npm run build
+-npm run dev
 -php artisan migrate
+-4part sesh hoi nai
