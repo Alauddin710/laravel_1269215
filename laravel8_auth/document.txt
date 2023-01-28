@@ -1,0 +1,15 @@
+1. composer create-project laravel/laravel laravel8_auth
+2. cd laravel8_auth
+3. composer require laravel/jetstream
+4. php artisan jetstream:install livewire
+5. npm install
+6. npm run dev
+7. database connection in .env file
+8. php artisan migrate
+9. php artisan serve
+
+correction tow file
+      @vite(['resources/css/app.css', 'resources/js/app.js']) => Remove this and add following 
+
+      <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+      <script src="{{ asset('js/app.js') }}" defer></script>

@@ -40,5 +40,10 @@ Route::middleware([AuthLogin::class])->group(function () {
     Route::post('/login', [LoginController::class, 'login']);
 });
 
+
+Route::get('/jobs', function () {
+    return view('jobs');
+});
+
 // report controller
 Route::get('/reports', [ReportsController::class, 'report1']);
