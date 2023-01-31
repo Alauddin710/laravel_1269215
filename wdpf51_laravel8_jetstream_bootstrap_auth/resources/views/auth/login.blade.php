@@ -22,13 +22,13 @@
         @csrf
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" name="email" id="form2Example1" class="form-control" />
+          <input type="email" name="email" id="form2Example1" class="form-control" value="tokey@gmail.com" />
           <label class="form-label" for="form2Example1">Email address</label>
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <input type="password" name="password" id="form2Example2" class="form-control" />
+          <input type="password" name="password" id="form2Example2" class="form-control" value="abcde12345" />
           <label class="form-label" for="form2Example2">Password</label>
         </div>
 
@@ -53,7 +53,7 @@
 
         <!-- Register buttons -->
         <div class="text-center">
-          <p>Not a member? <a href="{{route('register')}}">Register</a></p>
+          <p>Not a member? <a href="{{ route('register') }}">Register</a></p>
           <p>or sign up with:</p>
           <button type="button" class="btn btn-link btn-floating mx-1">
             <i class="fab fa-facebook-f"></i>
