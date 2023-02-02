@@ -1,1 +1,11 @@
 -php artisan make:model Phone -mc
+****post create**
+1. php artisan make:model Post -mc
+2. php artisan make:model Comment -mc
+php artisan migrate
+php artisan db:seed \\ php artisan migrate:fresh --seed
+
+php artisan make:model Role -mc
+php artisan migrate:fresh --seed
+
+ata dekte hobe //Laravel 9 User Roles and Permissions Tutorial

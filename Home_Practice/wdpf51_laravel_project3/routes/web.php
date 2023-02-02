@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\showAge;
@@ -50,3 +51,9 @@ Route::get('/reports', [ReportController::class, 'Report1']);
 //users 
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/phone', [UserController::class, 'phoneData']);
+
+// post and comment Eloquent
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/roles', [UserController::class, 'roleAssaign']);
+Route::get('/roless', [UserController::class, 'roleAssaigns']);
+Route::get('/role', [UserController::class, 'roleAssaignss']);
