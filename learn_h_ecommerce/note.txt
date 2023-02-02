@@ -13,3 +13,25 @@
 -npm install
 -npm run build
 -npm run dev
+
+
+***Create Project*****
+1. composer create-project laravel/laravel:8.5.15 laravel8_5_15_ecommerce --prefer-dist
+2. composer require yajra/laravel-datatables-oracle:"~9.0" /data creater jonno
+3. Yajra\DataTables\DataTablesServiceProvider::class, / config/app.php (provider)
+4. composer require intervention/image // image resize
+
+then config/app.php (provider, Intervention\Image\ImageServiceProvider::class, aliases ,'Image' => Intervention\Image\Facades\Image::class)
+
+5. php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+
+****Cart System***
+6. composer require bumbummen99/shoppingcart // pakage
+7. php artisan vendor:publish --provider="Gloudemans\Shoppingcart\ShoppingcartServiceProvider" --tag="config"
+
+**** laravel ui auth ****
+-composer require laravel/ui
+-php artisan ui bootstrap --auth // ata na kaj korle bootstrap cdn lagate hobe resources/views/layouts/app
+-npm install
+-npm run build
+-npm run dev
