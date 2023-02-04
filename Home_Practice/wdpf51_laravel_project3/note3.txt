@@ -9,3 +9,18 @@ php artisan make:model Role -mc
 php artisan migrate:fresh --seed
 
 ata dekte hobe //Laravel 9 User Roles and Permissions Tutorial
+
+04/02/2023
+Tinker 
+php artisan tinker
+$user = new App\models\User;
+$user->email='alo@gmail.com'
+ $user->password=bcrypt('alo12345');
+ $user->name='alo';
+ $user->save();
+ $user->all();
+
+ *** posts sob data deka jabe 
+ $posts=App\models\post::all();
+ App\models\post::find(1); // akta record deka jabe
+ 
