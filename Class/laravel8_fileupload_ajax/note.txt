@@ -1,0 +1,5 @@
+composer create-project laravel/laravel laravel8_fileupload_ajax
+cd laravel8_fileupload_ajax
+env configaration
+php artisan make:model Image -mc
+php artisan migrate

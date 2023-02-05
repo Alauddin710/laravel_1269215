@@ -55,7 +55,8 @@
     </table>
 
 
-    {!! $products->links() !!}
+    {{-- {!! $products->links() !!} --}}
+    {!! $products->links('vendor.pagination.bootstrap-4') !!}
 
 
 <p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>

@@ -49,7 +49,8 @@
 </table>
 
 
-{!! $roles->render() !!}
+{{-- {!! $roles->render() !!} --}}
+{!! $roles->links('vendor.pagination.bootstrap-4') !!}
 
 
 <p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
