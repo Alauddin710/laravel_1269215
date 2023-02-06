@@ -1,0 +1,5 @@
+**** Create Project****
+1. composer create-project laravel/laravel eloquent_relationship 
+**then model create**
+2. php artisan make:model phone -m
+3. php artisan migrate
