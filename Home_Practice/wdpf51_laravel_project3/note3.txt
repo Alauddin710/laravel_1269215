@@ -23,4 +23,14 @@ $user->email='alo@gmail.com'
  *** posts sob data deka jabe 
  $posts=App\models\post::all();
  App\models\post::find(1); // akta record deka jabe
+6/02/2023
+ Api
+ php artisan make:controller Api/DogsController --api
+ php artisan make:model Dog --migration
+ php artisan migrate
+
+ Test 
+ php artisan make:test BasicTest
+
+
  
