@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReportController;
@@ -57,3 +58,10 @@ Route::get('/posts', [PostController::class, 'index']);
 Route::get('/roles', [UserController::class, 'roleAssaign']);
 Route::get('/roless', [UserController::class, 'roleAssaigns']);
 Route::get('/role', [UserController::class, 'roleAssaignss']);
+
+//send mail route
+Route::get('send-mail', [MailController::class, 'index']);
+
+// contact routing
+Route::get('contact', [MailController::class, 'contactForm']);
+Route::post('contact', [MailController::class, 'MessageSend'])->name('sendMsg');

@@ -32,5 +32,35 @@ $user->email='alo@gmail.com'
  Test 
  php artisan make:test BasicTest
 
+ 07/02/2023
+ .env te configaration korte hobe
+php artisan make:mail DemoMail
 
- 
+ demomail.php
+ class DemoMail extends Mailable
+{
+    use Queueable, SerializesModels;
+    public $mailData;
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->view('view.name');
+    }
+}
+
+
+****php artisan make:controller MailController
