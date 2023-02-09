@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('backend') }}/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('backend') }}/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{ asset('backend/plugins/toastr/toastr.css') }}">
 </head>
 
 <body>
@@ -81,6 +82,40 @@
     <script src="{{ asset('backend') }}/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('backend') }}/dist/js/pages/dashboard2.js"></script>
+    <script src="{{ asset('backend/plugins/toastr/toastr.min.js') }}"></script>
+    <script src="{{ asset('backend/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+    <script>
+        $(document).on("click", "#delete", function(e) {
+            e.preventDefault();
+            var link = $(this).attr("href");
+            swal({
+                    title: "Are You Want to delete ?",
+                    text: "Once Delete, This Will be Permanently Delete",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        window.location.href = link;
+                    } else {
+                        swal("Safe Data!");
+                    }
+                });
+
+        });
+    </script>
+    <script>
+        @if (Session::has("messege"))
+        var type ="{{ Session::get('alert-type,'info') }}"
+        switch(type){
+            case 'info':
+                toastr.info("{{ Session::get('messege') }}")
+        }
+      
+            
+        @endif
+    </script>
 </body>
 
 </html>
