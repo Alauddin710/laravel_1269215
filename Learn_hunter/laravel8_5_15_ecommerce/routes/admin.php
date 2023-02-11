@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -25,4 +26,9 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'middleware' => 'is_a
 
     Route::get('/admin/home', 'AdminController@admin')->name('admin.home');
     Route::get('/admin/logout', 'AdminController@logout')->name('admin.logout');
+});
+
+//category routes
+Route::group(['prefix' => 'category'], function () {
+    Route::get('/', [CategoryController::class, 'index'])->name('category.index');
 });
