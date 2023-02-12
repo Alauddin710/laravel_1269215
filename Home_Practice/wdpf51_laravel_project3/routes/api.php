@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\DogsController;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\SearchController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,4 +23,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 // routes/api.php
 Route::apiResource('dogs', DogsController::class);
-Route::resource('products', ProductController::class);
+// Route::resource('products', ProductController::class);
+Route::apiResource('products', ProductController::class);
+Route::post('search', [SearchController::class, 'search']);
