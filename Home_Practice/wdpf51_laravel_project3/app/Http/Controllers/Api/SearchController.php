@@ -9,6 +9,6 @@ class SearchController extends Controller
 {
     public function search(Request $req)
     {
-        return $req->all();
+        return $req->item;
     }
 }
