@@ -31,4 +31,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'middleware' => 'is_a
 //category routes
 Route::group(['prefix' => 'category'], function () {
     Route::get('/', [CategoryController::class, 'index'])->name('category.index');
+    Route::post('/store', [CategoryController::class, 'store'])->name('category.store');
+    Route::get('/delete/{id}', [CategoryController::class, 'destory'])->name('category.delete');
 });
