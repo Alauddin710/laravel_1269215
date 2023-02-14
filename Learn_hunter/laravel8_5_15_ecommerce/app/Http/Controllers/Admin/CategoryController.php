@@ -43,6 +43,37 @@ class CategoryController extends Controller
         return redirect()->back()->with($notification);
     }
 
+
+    // Edit mehtod
+
+    public function edit($id)
+    {
+        //query builder
+        // $data =  DB::table('categories')->where('id', $id)->first();
+        // Eloquent ORM
+        $data = Category::findOrfail($id);
+        return response()->json($data);
+    }
+
+    // Update
+    public function update(Request $request)
+    {
+        //query builder
+        // $id = $request->id;
+        // $data = array();
+        // $data['category_name'] = $request->category_name;
+        // $data['category_slug'] = Str::slug($request->category_name, '-');
+        // DB::table('categories')->where('id', $id)->update($data);
+
+        //Eloquent ORM
+        $category = Category::where('id', $request->id)->first();
+        $category->update([
+            'category_name' => $request->category_name,
+            'category_slug' => Str::slug($request->category_name, '-')
+        ]);
+        $notification = array('messege' => 'Category Updated', 'alert-type' => 'success');
+        return redirect()->back()->with($notification);
+    }
     //destory
     public function destory($id)
     {
