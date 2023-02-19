@@ -1,0 +1,22 @@
+composer create-project laravel/laravel laravel8vue_shop
+php artisan make:model Cart -mcr
+php artisan make:model Product -mcr
+php artisan migrate
+php artisan make:factory ProductFactory
+php artisan make:seeder ProductSeeder
+php artisan db:seed ProductSeeder
+
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm run dev // css na pele abar nmp run dev
+
+******
+pakage json file theke laster 3ta delet tar por node_mudules delte kore pore nicer command dite hobe
+npm install vue
+npm install vue-loader --save-dev
+npm install vue-template-loader
+npm install
+npm run dev
+then
+php artisan make:controller FontendController

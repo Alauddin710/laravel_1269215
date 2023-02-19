@@ -64,3 +64,4 @@ php artisan make:mail DemoMail
 
 
 ****php artisan make:controller MailController
+
