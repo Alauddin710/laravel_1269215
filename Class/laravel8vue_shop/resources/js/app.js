@@ -4,9 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require("./bootstrap");
 
-window.Vue = require('vue').default;
+//window.Vue = require("vue").default;
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +19,10 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component(
+//     "example-component",
+//     require("./components/ExampleComponent.vue").default
+// );
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -27,6 +30,16 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
-});
+// const app = new Vue({
+//     el: "#app"
+// });
+import { createApp } from "vue";
+// import ExampleComponent from "./components/ExampleComponent.vue";
+import addToCart from "./components/AddToCart.vue";
+import Cart from "./components/Cart.vue";
+const app = createApp({});
+// app.component("example-component", ExampleComponent);
+app.component("add-to-cart", addToCart);
+app.component("cart", Cart);
+
+app.mount("#app");

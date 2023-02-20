@@ -20,3 +20,7 @@ npm install
 npm run dev
 then
 php artisan make:controller FontendController
+
+20/02/2023
+npm i axios
+npm run watch
