@@ -1,0 +1,11 @@
+
+composer require laravel/ui
+npm install 
+php artisan ui vue
+php artisan ui vue --auth // 
+npm install 
+npm run dev
+npm run dev
+npm i vue 
+npm i 
+npm i vue router
