@@ -29,3 +29,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('products', [FrontendController::class, 'allProducts']);
+
+Route::get('{slug}', function () {
+    return view('front');
+});
