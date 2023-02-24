@@ -65,3 +65,10 @@ php artisan make:mail DemoMail
 
 ****php artisan make:controller MailController
 
+22/02/2023
+npm install
+npm i vue
+npm install vue-loader --save-dev
+npm install vue-template-loader --save-dev
+npm install vue-router
+npm run dev

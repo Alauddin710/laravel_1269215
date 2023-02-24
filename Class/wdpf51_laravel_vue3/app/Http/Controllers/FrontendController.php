@@ -14,7 +14,7 @@ class FrontendController extends Controller
 
     public function allProducts()
     {
-        $products =  Product::all();
+        $products =  Product::limit(10)->get();
         return response()->json($products);
     }
 }

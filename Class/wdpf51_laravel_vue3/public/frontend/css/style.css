@@ -138,6 +138,7 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	background-image: url('/frontend/img/no_image.jpg');
 }
 
 .spad {

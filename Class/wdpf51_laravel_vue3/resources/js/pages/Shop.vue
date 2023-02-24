@@ -1,5 +1,6 @@
 <script setup>
 import axios from "axios";
+import AddToCart from "../components/AddToCart.vue";
 </script>
 <template>
     <!-- Hero Section Begin -->
@@ -58,6 +59,7 @@ import axios from "axios";
             </div>
         </div>
     </section>
+
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
@@ -385,13 +387,10 @@ import axios from "axios";
                                                 ><i class="fa fa-retweet"></i
                                             ></a>
                                         </li>
-                                        <li>
-                                            <a href="#"
-                                                ><i
-                                                    class="fa fa-shopping-cart"
-                                                ></i
-                                            ></a>
-                                        </li>
+                                        <!-- addtocart -->
+                                        <add-to-cart
+                                            :pr-id="product.id"
+                                        ></add-to-cart>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -431,7 +430,7 @@ export default {
         productData() {
             axios.get("/products").then(response => {
                 this.products = response.data;
-                // console.log(response.data);
+                console.log(response.data);
             });
         }
     }
