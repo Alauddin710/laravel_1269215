@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    {{-- {{ Auth::user()->id }} --}}
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>

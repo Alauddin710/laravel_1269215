@@ -11,7 +11,7 @@ export default {
     methods: {
         addProducttoCart() {
             // alert("Your Product ID: " + this.prId);
-            axios.post("api/cart", { prid: this.prId }).then(response => {
+            axios.post("cart", { prid: this.prId }).then(response => {
                 console.log(response.data);
             });
         }
